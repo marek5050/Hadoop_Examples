@@ -1,0 +1,30 @@
+Title: Hadoop, Using an earlier version of Hadoop with 2.+
+Author: Marek
+Date: DEC 21, 2014
+Keywords: java,hadoop
+
+#Using an earlier version of Hadoop (1.2.1 with example)
+Start off by installing the latest version of Hadoop because you'll need the basic infrastructure in place no matter what version you want to use.  You can find my tutorial on installing Hadoop on Yosemite [here](http://amodernstory.com/2014/09/23/installing-hadoop-on-mac-osx-yosemite/).
+
+Find the version of Hadoop you are specifically looking for, for example version 1.2.1 can be found here [https://archive.apache.org/dist/hadoop/core/hadoop-1.2.1/](https://archive.apache.org/dist/hadoop/core/hadoop-1.2.1/)
+
+Download the tar.gz file and unzip it.
+
+Copy the contents of the folder into /usr/local/Cellar/hadoop
+
+Now just start up your local hadoop configuration, using hstart we created in the introduction tutorial.
+
+Run your job using
+	/usr/local/hadoop/1.2.1/bin/hadoop jar ./target/wordcount.jar dataset1.txt $(date +%s)
+
+
+To make this a little easier create a shell script called setmeup that will execute the command.
+
+
+	#!/bin/bash
+	#/usr/local/Cellar/hadoop/1.2.1/bin/hadoop jar ./target/bdp-1.0.jar 	dataSet1.txt $(date +%s)
+
+After you create the script, do a chmod +x ./se	tmeup to make it executable. Then run  ./setmeup which should execute the job.
+
+6.	Notice this will produce output files directly in the build / run directory.
+
