@@ -1,4 +1,4 @@
-package com.qfa.cs378;
+package com.qfa;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;

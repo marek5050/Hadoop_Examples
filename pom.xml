@@ -4,7 +4,7 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.qfa.cs378</groupId>
+    <groupId>com.qfa</groupId>
     <artifactId>WordCount</artifactId>
     <packaging>jar</packaging>
     <version>1.0</version>
@@ -63,7 +63,7 @@
               <configuration>
                   <archive>
                       <manifest>
-                          <mainClass>com.qfa.cs378.WordCount</mainClass>
+                          <mainClass>com.qfa.WordCount</mainClass>
                       </manifest>
                   </archive>
               </configuration>
