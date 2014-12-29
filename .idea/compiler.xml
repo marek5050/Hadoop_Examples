@@ -23,10 +23,12 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="bdp" />
+        <module name="WordCount" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="bdp" target="1.6" />
+      <module name="WordCount" target="1.6" />
     </bytecodeTargetLevel>
   </component>
 </project>
