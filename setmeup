@@ -1,5 +1,5 @@
 #!/bin/bash
 
-/usr/local/Cellar/hadoop/1.2.1/bin/hadoop jar ./target/bdp-1.0.jar datasets/dataSet1.txt $(date +%s)
+hadoop jar ./target/wordcount-1.0.jar datasets/dataSet1.txt $(date +%s)
 
 #hadoop jar ./target/bdp-1.0.jar dataSet1.txt $(date +%s)
